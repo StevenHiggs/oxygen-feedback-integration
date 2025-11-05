@@ -1,60 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="model_context_protocol_preferences">
-    <title>Model Context Protocol Preferences</title>
+<topic id="mcp_options_reference">
+    <title>Model Context Protocol Options</title>
     <body>
-        <p>
-            The <b>Model Context Protocol</b> preferences panel allows you to configure the integration between Oxygen AI Positron Assistant and the Anthropic Model Context Protocol (MCP). These settings enable secure, two-way connections between your data sources and AI-powered tools.
-        </p>
-        <p>
-            The following options are available:
+        <p>The <uicontrol>Model Context Protocol</uicontrol> preferences panel, found in 
+            <menucascade>
+                <uicontrol>Options</uicontrol>
+                <uicontrol>Preferences</uicontrol>
+                <uicontrol>Plugins</uicontrol>
+                <uicontrol>Oxygen AI Positron Assistant</uicontrol>
+                <uicontrol>Model Context Protocol</uicontrol>
+            </menucascade>, 
+            provides configuration options for connecting Oxygen AI Positron Assistant to external tools and data sources using the Anthropic Model Context Protocol (MCP).
         </p>
         <dl>
             <dlentry>
                 <dt>Configuration file</dt>
                 <dd>
-                    Specifies the path to the MCP configuration file (<code>mcp-config.json</code>). You can enter the path manually or use the folder icon to browse for the file. The configuration file defines the connection and tool settings for MCP integration.
-                    <p>
-                        <xref href="https://github.com/anthropics/model-context-protocol#configuration-file-structure">Configuration file structure</xref>
-                    </p>
+                    Specifies the path to the MCP configuration file (for example, <code>${pd}/positron-ai-actions/mcp-config.json</code>). 
+                    This file defines the available MCP tools and their settings. 
+                    Use the folder icon to browse for a file, or enter the path manually. 
+                    A link to <uicontrol>Configuration file structure</uicontrol> is provided for reference.
                 </dd>
             </dlentry>
             <dlentry>
                 <dt>Connection timeout (seconds)</dt>
                 <dd>
-                    Sets the maximum time, in seconds, to wait for a connection to the MCP server before timing out. The default value is <b>10</b> seconds.
+                    Sets the maximum time (in seconds) to wait for a connection to an MCP server before timing out. 
+                    The default value is <code>10</code> seconds.
                 </dd>
             </dlentry>
             <dlentry>
                 <dt>Allow running local MCP servers</dt>
                 <dd>
-                    If enabled, allows the application to start and connect to MCP servers running on the local machine.
+                    If selected, enables the use of MCP servers running on the local machine. 
+                    This is useful for development or testing scenarios where a local MCP server is available.
                 </dd>
             </dlentry>
             <dlentry>
                 <dt>Add provided tools to all chat modes</dt>
                 <dd>
-                    When selected, all tools defined in the MCP configuration file are made available in every chat mode within the AI Positron Assistant.
+                    If selected, the tools defined in the MCP configuration file are made available in all chat modes of the AI Positron Assistant.
                 </dd>
             </dlentry>
             <dlentry>
                 <dt>Connection status</dt>
                 <dd>
-                    Displays the current status of the MCP connection and any issues encountered, such as missing or invalid configuration files.
+                    Displays the current status of the MCP configuration and connection. 
+                    For example, if the configuration file is not found, an error message is shown with the file path.
                 </dd>
             </dlentry>
             <dlentry>
                 <dt>Allow running the Oxygen XML application as a local MCP server (Experimental)</dt>
                 <dd>
-                    If checked, enables the Oxygen XML application itself to act as a local MCP server. This is an experimental feature and may be subject to change.
+                    If selected, allows the Oxygen XML application itself to act as a local MCP server. 
+                    This is an experimental feature and may be subject to change.
+                </dd>
+            </dlentry>
+            <dlentry>
+                <dt>Global Options / Project Options</dt>
+                <dd>
+                    Choose whether the settings apply globally to all projects or only to the current project.
                 </dd>
             </dlentry>
         </dl>
         <p>
-            At the bottom of the panel, you can choose whether these settings apply globally or only to the current project by selecting <b>Global Options</b> or <b>Project Options</b>.
-        </p>
-        <p>
-            Use the <b>Restore Defaults</b> button to reset all options to their default values. Click <b>OK</b> to save changes, <b>Cancel</b> to discard changes, or <b>Apply</b> to apply changes without closing the dialog.
+            <uicontrol>Restore Defaults</uicontrol> resets all options to their default values. 
+            Use <uicontrol>OK</uicontrol> to save changes, <uicontrol>Cancel</uicontrol> to discard them, or <uicontrol>Apply</uicontrol> to apply changes without closing the dialog.
         </p>
     </body>
 </topic>
