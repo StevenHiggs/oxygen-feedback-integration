@@ -18,8 +18,9 @@
       Syntax</b><codeblock id="codeblock_o3z_kvb_fhc" outputclass="language-css">/* With a &lt;size-query> */
 @container (width > 400px) {
   h2 {
-    font-size: 1.5em;
-  }
+    		font-size: 1.5em;
+  		}
+}
 }
 
 /* With an optional &lt;container-name> */
