@@ -1,63 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="topic_mcp_options">
-    <title>Main Control Panel Options</title>
+<topic id="mcp_preferences">
+    <title>Model Context Protocol Preferences</title>
     <body>
-        <p>
-            The Main Control Panel provides access to a variety of configuration options that allow you to customize the application's behavior and appearance. The following options are available:
-        </p>
-        <section>
-            <title>Options</title>
-            <dl>
-                <dlentry>
-                    <dt>Enable Notifications</dt>
-                    <dd>
-                        Turns on or off system notifications for important events and updates. When enabled, you will receive pop-up alerts and messages.
-                    </dd>
-                </dlentry>
-                <dlentry>
-                    <dt>Auto-Start on Login</dt>
-                    <dd>
-                        Automatically launches the application when you log in to your system. Disable this option if you prefer to start the application manually.
-                    </dd>
-                </dlentry>
-                <dlentry>
-                    <dt>Theme Selection</dt>
-                    <dd>
-                        Allows you to choose between Light, Dark, or System Default themes to adjust the application's appearance according to your preference.
-                    </dd>
-                </dlentry>
-                <dlentry>
-                    <dt>Language</dt>
-                    <dd>
-                        Sets the display language for the application interface. Select your preferred language from the available list.
-                    </dd>
-                </dlentry>
-                <dlentry>
-                    <dt>Check for Updates Automatically</dt>
-                    <dd>
-                        When enabled, the application will periodically check for software updates and notify you when a new version is available.
-                    </dd>
-                </dlentry>
-                <dlentry>
-                    <dt>Backup Settings</dt>
-                    <dd>
-                        Provides options to back up your current configuration or restore from a previous backup. Useful for migrating settings or recovering from issues.
-                    </dd>
-                </dlentry>
-                <dlentry>
-                    <dt>Reset to Defaults</dt>
-                    <dd>
-                        Restores all settings in the Main Control Panel to their original default values. Use this option if you want to undo all customizations.
-                    </dd>
-                </dlentry>
-            </dl>
-        </section>
-        <section>
-            <title>Related Information</title>
-            <p>
-                For more details on configuring advanced preferences, see <xref href="actions_preferences.dita">Actions Preferences</xref>.
-            </p>
-        </section>
+        <p>The <uicontrol>Model Context Protocol</uicontrol> preferences panel allows you to configure integration settings for the Anthropic Model Context Protocol (MCP) in the Oxygen AI Positron Assistant plugin. MCP is an open standard that enables secure, two-way connections between data sources and AI-powered tools.</p>
+        <dl>
+            <dlentry>
+                <dt>Configuration file</dt>
+                <dd>Specifies the path to the MCP configuration file (for example, <code>${pd}/positron-ai-actions/mcp-config.json</code>). You can enter the path manually or use the folder icon to browse for the file. A link to the <uicontrol>Configuration file structure</uicontrol> is provided for reference.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Connection timeout (seconds)</dt>
+                <dd>Sets the maximum time, in seconds, to wait for a connection to the MCP server before timing out. The default value is <code>10</code> seconds.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Allow running local MCP servers</dt>
+                <dd>If selected, enables the use of local MCP servers for development or testing purposes.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Add provided tools to all chat modes</dt>
+                <dd>If selected, the tools defined in the MCP configuration file are made available in all chat modes within the AI Positron Assistant.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Connection status</dt>
+                <dd>Displays the current status of the MCP configuration and connection. For example, if the configuration file is not found, an error message is shown with the file path.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Allow running the Oxygen XML application as a local MCP server (Experimental)</dt>
+                <dd>If selected, allows the Oxygen XML application itself to act as a local MCP server. This is an experimental feature.</dd>
+            </dlentry>
+        </dl>
+        <p>At the bottom of the panel, you can choose whether the settings apply globally (<uicontrol>Global Options</uicontrol>) or only to the current project (<uicontrol>Project Options</uicontrol>).</p>
+        <p>Use the <uicontrol>OK</uicontrol>, <uicontrol>Cancel</uicontrol>, or <uicontrol>Apply</uicontrol> buttons to save or discard your changes. The <uicontrol>Restore Defaults</uicontrol> button resets all options to their default values.</p>
     </body>
 </topic>
