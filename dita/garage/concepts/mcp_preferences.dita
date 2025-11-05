@@ -1,48 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="mcp_preferences">
-    <title>Model Context Protocol Preferences</title>
+<topic id="topic_mcp_options">
+    <title>Main Control Panel Options</title>
     <body>
-        <p>The <uicontrol>Model Context Protocol</uicontrol> preferences panel allows you to configure options for connecting Oxygen AI Positron Assistant to external Model Context Protocol (MCP) servers and tools. These settings control how the plugin interacts with MCP endpoints and manages tool integration.</p>
-        <dl>
-            <dlentry>
-                <dt>Configuration file</dt>
-                <dd>
-                    <p>Specifies the path to the MCP configuration file (for example, <code>${pd}/positron-ai-actions/mcp-config.json</code>). This file defines the available MCP servers and tools. You can use the folder button to browse for a file, or enter the path manually. A link to the <uicontrol>Configuration file structure</uicontrol> is provided for reference.</p>
-                </dd>
-            </dlentry>
-            <dlentry>
-                <dt>Connection timeout (seconds)</dt>
-                <dd>
-                    <p>Sets the maximum time, in seconds, to wait for a connection to an MCP server before timing out. The default value is <code>10</code> seconds.</p>
-                </dd>
-            </dlentry>
-            <dlentry>
-                <dt>Allow running local MCP servers</dt>
-                <dd>
-                    <p>If selected, enables the use of MCP servers running on the local machine. This is useful for development or testing scenarios where you want to connect to a server hosted locally.</p>
-                </dd>
-            </dlentry>
-            <dlentry>
-                <dt>Add provided tools to all chat modes</dt>
-                <dd>
-                    <p>If enabled, the tools defined in the MCP configuration file are made available in all chat modes of the AI Positron Assistant, not just in specific contexts.</p>
-                </dd>
-            </dlentry>
-            <dlentry>
-                <dt>Connection status</dt>
-                <dd>
-                    <p>Displays the current status of the MCP configuration and connection. For example, if the configuration file is missing or invalid, an error message is shown. When the configuration is valid, a green checkmark and confirmation message are displayed.</p>
-                </dd>
-            </dlentry>
-            <dlentry>
-                <dt>Allow running the Oxygen XML application as a local MCP server (Experimental)</dt>
-                <dd>
-                    <p>If selected, allows the Oxygen XML application itself to act as a local MCP server. This is an experimental feature and may be subject to change.</p>
-                </dd>
-            </dlentry>
-        </dl>
-        <p>At the bottom of the panel, you can choose whether these settings apply globally (<uicontrol>Global Options</uicontrol>) or only to the current project (<uicontrol>Project Options</uicontrol>).</p>
-        <p>Use the <uicontrol>OK</uicontrol>, <uicontrol>Cancel</uicontrol>, or <uicontrol>Apply</uicontrol> buttons to save or discard your changes. The <uicontrol>Restore Defaults</uicontrol> button resets all options to their default values.</p>
+        <p>
+            The Main Control Panel provides access to a variety of configuration options that allow you to customize the application's behavior and appearance. The following options are available:
+        </p>
+        <section>
+            <title>Options</title>
+            <dl>
+                <dlentry>
+                    <dt>Enable Notifications</dt>
+                    <dd>
+                        Turns on or off system notifications for important events and updates. When enabled, you will receive pop-up alerts and messages.
+                    </dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Auto-Start on Login</dt>
+                    <dd>
+                        Automatically launches the application when you log in to your system. Disable this option if you prefer to start the application manually.
+                    </dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Theme Selection</dt>
+                    <dd>
+                        Allows you to choose between Light, Dark, or System Default themes to adjust the application's appearance according to your preference.
+                    </dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Language</dt>
+                    <dd>
+                        Sets the display language for the application interface. Select your preferred language from the available list.
+                    </dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Check for Updates Automatically</dt>
+                    <dd>
+                        When enabled, the application will periodically check for software updates and notify you when a new version is available.
+                    </dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Backup Settings</dt>
+                    <dd>
+                        Provides options to back up your current configuration or restore from a previous backup. Useful for migrating settings or recovering from issues.
+                    </dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Reset to Defaults</dt>
+                    <dd>
+                        Restores all settings in the Main Control Panel to their original default values. Use this option if you want to undo all customizations.
+                    </dd>
+                </dlentry>
+            </dl>
+        </section>
+        <section>
+            <title>Related Information</title>
+            <p>
+                For more details on configuring advanced preferences, see <xref href="actions_preferences.dita">Actions Preferences</xref>.
+            </p>
+        </section>
     </body>
 </topic>
