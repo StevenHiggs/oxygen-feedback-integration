@@ -10,8 +10,8 @@
     <p><b>Example
       Syntax</b><codeblock id="codeblock_o3z_kvb_fhc" outputclass="language-css">@container (width > 400px) {
   h2 {
-        		font-size: 1.5em;
-        font-weight: bold;
+    		font-size: 1.5em;
+    font-weight: bold;
   }
 }</codeblock></p>
     </body>
