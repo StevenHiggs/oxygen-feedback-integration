@@ -1,63 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="topic_mcp_options">
-    <title>MCP Options</title>
+<topic id="model_context_protocol_preferences">
+    <title>Model Context Protocol Preferences</title>
     <body>
         <p>
-            The MCP (Multi-Command Panel) options allow you to customize the behavior and appearance of the panel to suit your workflow. The following options are available in the MCP settings dialog:
+            The <b>Model Context Protocol</b> preferences panel allows you to configure the integration between Oxygen AI Positron Assistant and the Anthropic Model Context Protocol (MCP). These settings enable secure, two-way connections between your data sources and AI-powered tools.
+        </p>
+        <p>
+            The following options are available:
         </p>
         <dl>
             <dlentry>
-                <dt>Show panel on startup</dt>
+                <dt>Configuration file</dt>
                 <dd>
+                    Specifies the path to the MCP configuration file (<code>mcp-config.json</code>). You can enter the path manually or use the folder icon to browse for the file. The configuration file defines the connection and tool settings for MCP integration.
                     <p>
-                        When enabled, the MCP panel will automatically open each time the application starts. Disable this option if you prefer to open the panel manually.
+                        <xref href="https://github.com/anthropics/model-context-protocol#configuration-file-structure">Configuration file structure</xref>
                     </p>
                 </dd>
             </dlentry>
             <dlentry>
-                <dt>Remember last used layout</dt>
+                <dt>Connection timeout (seconds)</dt>
                 <dd>
-                    <p>
-                        If checked, the MCP will restore the last used layout and arrangement of commands when reopened. Uncheck to always start with the default layout.
-                    </p>
+                    Sets the maximum time, in seconds, to wait for a connection to the MCP server before timing out. The default value is <b>10</b> seconds.
                 </dd>
             </dlentry>
             <dlentry>
-                <dt>Enable command tooltips</dt>
+                <dt>Allow running local MCP servers</dt>
                 <dd>
-                    <p>
-                        Displays helpful tooltips when hovering over commands in the panel. This can assist new users in understanding the function of each command.
-                    </p>
+                    If enabled, allows the application to start and connect to MCP servers running on the local machine.
                 </dd>
             </dlentry>
             <dlentry>
-                <dt>Show icons only</dt>
+                <dt>Add provided tools to all chat modes</dt>
                 <dd>
-                    <p>
-                        When selected, only command icons are shown in the panel, hiding the text labels. This provides a more compact view.
-                    </p>
+                    When selected, all tools defined in the MCP configuration file are made available in every chat mode within the AI Positron Assistant.
                 </dd>
             </dlentry>
             <dlentry>
-                <dt>Panel opacity</dt>
+                <dt>Connection status</dt>
                 <dd>
-                    <p>
-                        Adjusts the transparency of the MCP panel. Use the slider to set the desired opacity level, from fully opaque to semi-transparent.
-                    </p>
+                    Displays the current status of the MCP connection and any issues encountered, such as missing or invalid configuration files.
                 </dd>
             </dlentry>
             <dlentry>
-                <dt>Reset to defaults</dt>
+                <dt>Allow running the Oxygen XML application as a local MCP server (Experimental)</dt>
                 <dd>
-                    <p>
-                        Restores all MCP options to their original default settings. Use this if you want to undo all customizations.
-                    </p>
+                    If checked, enables the Oxygen XML application itself to act as a local MCP server. This is an experimental feature and may be subject to change.
                 </dd>
             </dlentry>
         </dl>
         <p>
-            After adjusting the options, click <b>OK</b> to apply your changes or <b>Cancel</b> to discard them.
+            At the bottom of the panel, you can choose whether these settings apply globally or only to the current project by selecting <b>Global Options</b> or <b>Project Options</b>.
+        </p>
+        <p>
+            Use the <b>Restore Defaults</b> button to reset all options to their default values. Click <b>OK</b> to save changes, <b>Cancel</b> to discard changes, or <b>Apply</b> to apply changes without closing the dialog.
         </p>
     </body>
 </topic>
