@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_h1m_x5b_fhc">
+    <title>Container At-rule</title>
+  <shortdesc>Information gathered from the <xref href="https://developer.mozilla.org/en-US/"
+      format="html" scope="external">Mozilla Resources for Developers, by Developers
+    website</xref>.</shortdesc>
+    <body>
+    <p>The <codeph>@container</codeph> CSS at-rule is a conditional group rule that applies styles
+      to a containment context. Style declarations are filtered by a condition and applied to the
+      container if the condition is true. The condition is evaluated when the queried container
+      size, <codeph>&lt;style-feature></codeph>, or scroll-state changes.</p>
+    <p>The <codeph>container-name</codeph> property specifies a list of query container names. These
+      names can be used by <codeph>@container</codeph> rules to filter which query containers are
+      targeted. The optional, case-sensitive <codeph>&lt;container-name></codeph> filters the query
+      containers that are targeted by the query.</p>
+    <p><b>Example
+      Syntax</b><codeblock id="codeblock_o3z_kvb_fhc" outputclass="language-css">/* With a &lt;size-query> */
+@container (width > 400px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* With an optional &lt;container-name> */
+@container tall (height > 30rem) {
+  p {
+    line-height: 1.6;
+  }
+}
+
+/* With a &lt;scroll-state> */
+@container scroll-state(scrollable: top) {
+  .back-to-top-link {
+    visibility: visible;
+  }
+}
+
+/* With a &lt;container-name> and a &lt;scroll-state> */
+@container sticky-heading scroll-state(stuck: top) {
+  h2 {
+    background: purple;
+    color: white;
+  }
+}
+
+/* Multiple queries in a single condition */
+@container (width > 400px) and style(--responsive: true) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* Condition list */
+@container card (width > 400px), style(--responsive: true), scroll-state(stuck: top) {
+  h2 {
+    font-size: 1.5em;
+  }
+}</codeblock></p>
+    </body>
+</topic>
