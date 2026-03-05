@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="wa_9538_large_table_demo">
+  <title>Large table editing demo</title>
+  <shortdesc>Demo topic for showcasing scrollable large tables with sticky headers.</shortdesc>
+  <body>
+    <section id="intro">
+      <title>Context</title>
+      <p>This topic intentionally contains a large CALS table (many rows + many columns) to demonstrate how editing remains comfortable even when you scroll inside the table.</p>
+      <p>Scroll down inside the table and keep an eye on the header row. Then scroll horizontally and verify the header stays aligned with its columns.</p>
+    </section>
+
+    <section id="demo-table">
+      <title>Project plan matrix</title>
+      <p>The table below is wide enough to require horizontal scrolling and long enough to require vertical scrolling.</p>
+
+      <table id="wa_9538_big_table" frame="all" rowsep="1" colsep="1">
+        <title>Large table for sticky header + scrollbars</title>
+        <tgroup cols="14" align="left">
+          <colspec colname="c1" colnum="1" colwidth="120px"/>
+          <colspec colname="c2" colnum="2" colwidth="220px"/>
+          <colspec colname="c3" colnum="3" colwidth="160px"/>
+          <colspec colname="c4" colnum="4" colwidth="180px"/>
+          <colspec colname="c5" colnum="5" colwidth="140px"/>
+          <colspec colname="c6" colnum="6" colwidth="160px"/>
+          <colspec colname="c7" colnum="7" colwidth="160px"/>
+          <colspec colname="c8" colnum="8" colwidth="220px"/>
+          <colspec colname="c9" colnum="9" colwidth="320px"/>
+          <colspec colname="c10" colnum="10" colwidth="140px"/>
+          <colspec colname="c11" colnum="11" colwidth="140px"/>
+          <colspec colname="c12" colnum="12" colwidth="160px"/>
+          <colspec colname="c13" colnum="13" colwidth="160px"/>
+          <colspec colname="c14" colnum="14" colwidth="220px"/>
+          <thead>
+            <row>
+              <entry>Row ID</entry>
+              <entry>Feature / Deliverable</entry>
+              <entry>Area</entry>
+              <entry>Owner</entry>
+              <entry>Priority</entry>
+              <entry>Status</entry>
+              <entry>Due date</entry>
+              <entry>Depends on</entry>
+              <entry>Notes</entry>
+              <entry>Effort</entry>
+              <entry>Risk</entry>
+              <entry>QA</entry>
+              <entry>Docs</entry>
+              <entry>Reference</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>R-001</entry>
+              <entry>Large table scroll container</entry>
+              <entry>Tables</entry>
+              <entry>Denis</entry>
+              <entry>P0</entry>
+              <entry>Done</entry>
+              <entry>2026-01-29</entry>
+              <entry>UI framework</entry>
+              <entry>Max-height at ~70vh; vertical scroll inside table.</entry>
+              <entry>M</entry>
+              <entry>Low</entry>
+              <entry>Pass</entry>
+              <entry>Draft</entry>
+              <entry>WA-9538</entry>
+            </row>
+            <row>
+              <entry>R-002</entry>
+              <entry>Sticky header for CALS table</entry>
+              <entry>Tables</entry>
+              <entry>Denis</entry>
+              <entry>P0</entry>
+              <entry>Done</entry>
+              <entry>2026-01-29</entry>
+              <entry>Scroll container</entry>
+              <entry>Header stays visible while scrolling inside the table.</entry>
+              <entry>M</entry>
+              <entry>Low</entry>
+              <entry>Pass</entry>
+              <entry>Draft</entry>
+              <entry>WA-9538</entry>
+            </row>
+            <row>
+              <entry>R-003</entry>
+              <entry>Horizontal scroll for wide tables</entry>
+              <entry>Tables</entry>
+              <entry>Denis</entry>
+              <entry>P1</entry>
+              <entry>Done</entry>
+              <entry>2026-01-29</entry>
+              <entry>Fixed colspec widths</entry>
+              <entry>Verify header alignment while scrolling left/right.</entry>
+              <entry>M</entry>
+              <entry>Low</entry>
+              <entry>Pass</entry>
+              <entry>Draft</entry>
+              <entry>WA-9538</entry>
+            </row>
+
+            <row><entry>R-004</entry><entry>Update cell values deep in the table</entry><entry>Editing</entry><entry>QA</entry><entry>P1</entry><entry>Planned</entry><entry>2026-03-01</entry><entry>Sticky header</entry><entry>Change a status value after scrolling to mid-table.</entry><entry>S</entry><entry>Low</entry><entry>Todo</entry><entry>Todo</entry><entry>Demo</entry></row>
+            <row><entry>R-005</entry><entry>Validate header stays visible</entry><entry>UX</entry><entry>QA</entry><entry>P1</entry><entry>Planned</entry><entry>2026-03-01</entry><entry>Sticky header</entry><entry>Scroll down 30+ rows; header should remain visible.</entry><entry>S</entry><entry>Low</entry><entry>Todo</entry><entry>Todo</entry><entry>Demo</entry></row>
+            <row><entry>R-006</entry><entry>Check horizontal alignment after resize</entry><entry>UX</entry><entry>QA</entry><entry>P2</entry><entry>Planned</entry><entry>2026-03-02</entry><entry>Horizontal scroll</entry><entry>Resize browser; header cells should keep column alignment.</entry><entry>S</entry><entry>Med</entry><entry>Todo</entry><entry>Todo</entry><entry>Demo</entry></row>
+            <row><entry>R-007</entry><entry>Verify table scroll doesn’t affect page scroll</entry><entry>Scrolling</entry><entry>QA</entry><entry>P1</entry><entry>Planned</entry><entry>2026-03-02</entry><entry>Scroll container</entry><entry>After table scroll, click outside then continue page scrolling.</entry><entry>S</entry><entry>Med</entry><entry>Todo</entry><entry>Todo</entry><entry>Demo</entry></row>
+            <row><entry>R-008</entry><entry>Edit multiple rows while header is sticky</entry><entry>Editing</entry><entry>User</entry><entry>P2</entry><entry>Planned</entry><entry>2026-03-03</entry><entry>Sticky header</entry><entry>Make 2-3 quick edits at different row positions.</entry><entry>M</entry><entry>Low</entry><entry>Todo</entry><entry>Todo</entry><entry>Demo</entry></row>
+            <row><entry>R-009</entry><entry>Copy/paste values across columns</entry><entry>Editing</entry><entry>User</entry><entry>P2</entry><entry>Planned</entry><entry>2026-03-03</entry><entry>Wide table</entry><entry>Demonstrate copy from left columns to far-right columns.</entry><entry>M</entry><entry>Low</entry><entry>Todo</entry><entry>Todo</entry><entry>Demo</entry></row>
+            <row><entry>R-010</entry><entry>Review “What’s New” messaging</entry><entry>Docs</entry><entry>Steven</entry><entry>P3</entry><entry>Done</entry><entry>2026-02-24</entry><entry>Docs entry</entry><entry>Keep language user-benefit oriented, not implementation details.</entry><entry>S</entry><entry>Low</entry><entry>Pass</entry><entry>Done</entry><entry>28.1</entry></row>
+
+            <row><entry>R-011</entry><entry>Scenario: deep scroll + edit + horizontal scroll</entry><entry>Demo</entry><entry>Presenter</entry><entry>P1</entry><entry>Planned</entry><entry>2026-03-05</entry><entry>All</entry><entry>Scroll to R-040, edit Status, then scroll right to Notes and update.</entry><entry>S</entry><entry>Low</entry><entry>Todo</entry><entry>Todo</entry><entry>Video</entry></row>
+            <row><entry>R-012</entry><entry>Scenario: show header labels while navigating</entry><entry>Demo</entry><entry>Presenter</entry><entry>P1</entry><entry>Planned</entry><entry>2026-03-05</entry><entry>Sticky header</entry><entry>Highlight that header provides context for each column.</entry><entry>S</entry><entry>Low</entry><entry>Todo</entry><entry>Todo</entry><entry>Video</entry></row>
+            <row><entry>R-013</entry><entry>Scenario: scroll inside table only</entry><entry>Demo</entry><entry>Presenter</entry><entry>P2</entry><entry>Planned</entry><entry>2026-03-05</entry><entry>Scroll container</entry><entry>Show page content before/after; table scroll stays within table.</entry><entry>S</entry><entry>Low</entry><entry>Todo</entry><entry>Todo</entry><entry>Video</entry></row>
+
+            <row><entry>R-014</entry><entry>Row content filler</entry><entry>Data</entry><entry>Ana</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-10</entry><entry>-</entry><entry>Extra row to increase table height for vertical scroll.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-015</entry><entry>Row content filler</entry><entry>Data</entry><entry>Bogdan</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-10</entry><entry>-</entry><entry>Extra row with longer text in Notes to test wrapping behavior.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-016</entry><entry>Row content filler</entry><entry>Data</entry><entry>Mircea</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-10</entry><entry>-</entry><entry>Keep editing snappy even when the table is large.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-017</entry><entry>Row content filler</entry><entry>Data</entry><entry>Cosmin</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-10</entry><entry>-</entry><entry>Use consistent column widths to guarantee horizontal scrolling.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-018</entry><entry>Row content filler</entry><entry>Data</entry><entry>Dorina</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-10</entry><entry>-</entry><entry>Replicate real-life “projects overview” density.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-019</entry><entry>Row content filler</entry><entry>Data</entry><entry>Mihaela</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-10</entry><entry>-</entry><entry>Longer dependency names: “Table selection drag handle positioning”.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-020</entry><entry>Row content filler</entry><entry>Data</entry><entry>Steven</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-10</entry><entry>-</entry><entry>Use this row to demo quick edits while header stays visible.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+
+            <row><entry>R-021</entry><entry>Filler</entry><entry>Data</entry><entry>Ana</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-11</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-022</entry><entry>Filler</entry><entry>Data</entry><entry>Bogdan</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-11</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-023</entry><entry>Filler</entry><entry>Data</entry><entry>Mircea</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-11</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-024</entry><entry>Filler</entry><entry>Data</entry><entry>Cosmin</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-11</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-025</entry><entry>Filler</entry><entry>Data</entry><entry>Dorina</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-11</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-026</entry><entry>Filler</entry><entry>Data</entry><entry>Mihaela</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-11</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-027</entry><entry>Filler</entry><entry>Data</entry><entry>Steven</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-11</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-028</entry><entry>Filler</entry><entry>Data</entry><entry>Ana</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-11</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-029</entry><entry>Filler</entry><entry>Data</entry><entry>Bogdan</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-11</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-030</entry><entry>Filler</entry><entry>Data</entry><entry>Mircea</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-11</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+
+            <row><entry>R-031</entry><entry>Filler</entry><entry>Data</entry><entry>Cosmin</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-12</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-032</entry><entry>Filler</entry><entry>Data</entry><entry>Dorina</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-12</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-033</entry><entry>Filler</entry><entry>Data</entry><entry>Mihaela</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-12</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-034</entry><entry>Filler</entry><entry>Data</entry><entry>Steven</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-12</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-035</entry><entry>Filler</entry><entry>Data</entry><entry>Ana</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-12</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-036</entry><entry>Filler</entry><entry>Data</entry><entry>Bogdan</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-12</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-037</entry><entry>Filler</entry><entry>Data</entry><entry>Mircea</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-12</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-038</entry><entry>Filler</entry><entry>Data</entry><entry>Cosmin</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-12</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-039</entry><entry>Filler</entry><entry>Data</entry><entry>Dorina</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-12</entry><entry>-</entry><entry>Row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-040</entry><entry>Filler</entry><entry>Data</entry><entry>Mihaela</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-12</entry><entry>-</entry><entry>Row to increase height (good point to pause in the video).</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+
+            <row><entry>R-041</entry><entry>Filler</entry><entry>Data</entry><entry>Steven</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-13</entry><entry>-</entry><entry>Scroll a bit more to show header is still sticky.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-042</entry><entry>Filler</entry><entry>Data</entry><entry>Ana</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-13</entry><entry>-</entry><entry>Scroll to the right and edit the Notes cell.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-043</entry><entry>Filler</entry><entry>Data</entry><entry>Bogdan</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-13</entry><entry>-</entry><entry>Verify alignment between header and body after horizontal scroll.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-044</entry><entry>Filler</entry><entry>Data</entry><entry>Mircea</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-13</entry><entry>-</entry><entry>Optional: select a cell and show context remains visible.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-045</entry><entry>Filler</entry><entry>Data</entry><entry>Cosmin</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-13</entry><entry>-</entry><entry>Optional: demonstrate that page scroll is unaffected after clicking outside.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-046</entry><entry>Filler</entry><entry>Data</entry><entry>Dorina</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-13</entry><entry>-</entry><entry>Another row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-047</entry><entry>Filler</entry><entry>Data</entry><entry>Mihaela</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-13</entry><entry>-</entry><entry>Another row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-048</entry><entry>Filler</entry><entry>Data</entry><entry>Steven</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-13</entry><entry>-</entry><entry>Another row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-049</entry><entry>Filler</entry><entry>Data</entry><entry>Ana</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-13</entry><entry>-</entry><entry>Another row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-050</entry><entry>Filler</entry><entry>Data</entry><entry>Bogdan</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-13</entry><entry>-</entry><entry>Another row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+
+            <row><entry>R-051</entry><entry>Filler</entry><entry>Data</entry><entry>Mircea</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-14</entry><entry>-</entry><entry>Another row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-052</entry><entry>Filler</entry><entry>Data</entry><entry>Cosmin</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-14</entry><entry>-</entry><entry>Another row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-053</entry><entry>Filler</entry><entry>Data</entry><entry>Dorina</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-14</entry><entry>-</entry><entry>Another row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-054</entry><entry>Filler</entry><entry>Data</entry><entry>Mihaela</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-14</entry><entry>-</entry><entry>Another row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-055</entry><entry>Filler</entry><entry>Data</entry><entry>Steven</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-14</entry><entry>-</entry><entry>Another row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-056</entry><entry>Filler</entry><entry>Data</entry><entry>Ana</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-14</entry><entry>-</entry><entry>Another row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-057</entry><entry>Filler</entry><entry>Data</entry><entry>Bogdan</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-14</entry><entry>-</entry><entry>Another row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-058</entry><entry>Filler</entry><entry>Data</entry><entry>Mircea</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-14</entry><entry>-</entry><entry>Another row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-059</entry><entry>Filler</entry><entry>Data</entry><entry>Cosmin</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-14</entry><entry>-</entry><entry>Another row to increase height.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+            <row><entry>R-060</entry><entry>Filler</entry><entry>Data</entry><entry>Dorina</entry><entry>P3</entry><entry>Backlog</entry><entry>2026-03-14</entry><entry>-</entry><entry>Final filler row; scroll to here and then back up to show the header remains stable.</entry><entry>S</entry><entry>Low</entry><entry>N/A</entry><entry>N/A</entry><entry>Demo</entry></row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+
+    <section id="outro">
+      <title>After the table</title>
+      <p>This paragraph exists so you can show the transition from “scroll inside the table” back to
+        normal page scrolling when you click outside the table.</p>
+    </section>
+  </body>
+</topic>
